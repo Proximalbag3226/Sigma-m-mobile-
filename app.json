@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "Sigma-M",
+    "slug": "sigma-m-mobile",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "sigmam",
+    "backgroundColor": "#FAFAF9",
+    "ios": {
+      "bundleIdentifier": "mx.sigmam.verificacion",
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "Sigma-M usa la cámara para fotografiar la identificación, el rostro y la placa durante la verificación."
+      }
+    },
+    "android": {
+      "package": "mx.sigmam.verificacion",
+      "permissions": ["CAMERA"]
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        { "cameraPermission": "Sigma-M usa la cámara para fotografiar la identificación, el rostro y la placa durante la verificación." }
+      ],
+      "expo-secure-store",
+      [
+        "expo-build-properties",
+        { "android": { "usesCleartextTraffic": true } }
+      ]
+    ]
+  }
+}
